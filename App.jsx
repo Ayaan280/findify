@@ -1,0 +1,26 @@
+{
+  "name": "SearchHistory",
+  "type": "object",
+  "properties": {
+    "product_type": {
+      "type": "string",
+      "description": "The type of product searched for"
+    },
+    "answers": {
+      "type": "object",
+      "description": "All the answers collected during the search"
+    },
+    "recommended_product": {
+      "type": "object",
+      "description": "The product that was recommended"
+    },
+    "budget_matched": {
+      "type": "boolean",
+      "description": "Whether the recommendation matched the budget"
+    }
+  },
+  "required": [
+    "product_type",
+    "answers"
+  ]
+}
